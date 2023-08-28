@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+
+body,
+html {
+    font-family: Roboto, sans-serif;
+    font-size: 0.95rem;
+    min-height: 100vh;
+    color: $default-color;
+}
+
+.page-title {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    color: $default;
+    overflow-x: hidden;
+    font-size: 1rem !important;
+    line-height: 1.3;
+}
+
+.min-body-height {
+    min-height: calc(100vh - 116px);
+}
+
+#main{
+    padding:0px 10px 10px 10px;
+}
+.main{
+    padding:10px 0px;
+}
+
+.cart{
+    position: relative;
+    z-index: 2;
+    margin-right: 8px;
+    .count{
+        position: absolute;
+        background-color: #d24350;
+        color:#fff;
+        font-weight: bold;
+        padding: 3px 6px;
+        font-size: 11px;
+        border-radius: 50%;
+        top:-5px;
+        right:-8px;
+        z-index: 1;
+    }
+    .countdouble{
+        padding: 3px 3px;
+    }
+}
+
+.product-card{
+    padding: 10px;
+    min-height: 450px;
+    height: 250px;
+   
+    .card-prod-img{
+        height:250px;
+        width:200px;
+        // overflow: hidden;
+        // &:hover {
+        //         transform: scaleY(1.3);
+        //     }
+    }
+}
+
+//cartcss
+.cart-card{
+    padding:1rem 1rem;
+    .sub-card{
+        border:none;
+            border-top: 1px solid rgba(0, 0, 0, .125);
+            padding:1rem 0.5rem;
+    }
+    .star-rating{
+        padding:5px 10px;
+        background-color:green;
+        color: #fff;
+        border-radius: 6px;
+    }
+    .img-box{}
+}
+
+
+.btn-primary,.btn-danger{
+    &:focus{
+        box-shadow: none !important;
+    }
+}
+
+.filter-nav{
+    .nav-item{
+        .navlink.active{
+            // &.active{
+                color:red
+            //}
+        }
+    }
+}
